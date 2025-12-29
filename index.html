@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Airwave | Голосовая экосистема</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="animated-background">
+        <div class="sound-wave"></div>
+        <div class="sound-wave delay-1"></div>
+        <div class="sound-wave delay-2"></div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <div class="mic-icon"></div>
+                </div>
+                <span class="logo-text">Common Airwave</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="projects.html" class="nav-link">Проекты</a>
+                <a href="partners.html" class="nav-link">Партнёры</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+                <a href="https://t.me/commonairwave" class="nav-cta" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                    <span>Telegram</span>
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Новая экосистема</div>
+                <h1 class="hero-title">
+                    <span class="title-line">Где голоса</span>
+                    <span class="title-line">встречают истории</span>
+                </h1>
+                <p class="hero-subtitle">Объединяем чтецов, проекты и студии в едином творческом пространстве. Создаём инфраструктуру для озвучки будущего.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">Активных проектов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">Талантливых чтецов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">Студий-партнёров</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#ecosystem" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Узнать об экосистеме</span>
+                    </a>
+                    <a href="projects.html" class="btn btn-secondary">
+                        <i class="fas fa-headphones"></i>
+                        <span>Смотреть проекты</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="voice-visualization">
+                    <div class="voice-line"></div>
+                    <div class="voice-line"></div>
+                    <div class="voice-line"></div>
+                    <div class="voice-line"></div>
+                    <div class="voice-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О экосистеме -->
+    <section class="section ecosystem" id="ecosystem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Экосистема Common Airwave</h2>
+                <p class="section-subtitle">Три столпа, на которых строится наше сообщество</p>
+            </div>
+            
+            <div class="ecosystem-cards">
+                <div class="ecosystem-card">
+                    <div class="card-icon">
+                        <div class="icon-circle voice-icon"></div>
+                    </div>
+                    <h3>Для чтецов</h3>
+                    <p>Находите интересные проекты, развивайте навыки, получайте справедливое вознаграждение за ваш талант</p>
+                    <ul class="card-features">
+                        <li>Доступ к каталогу проектов</li>
+                        <li>Портфолио и репутация</li>
+                        <li>Обучение и мастер-классы</li>
+                    </ul>
+                </div>
+                
+                <div class="ecosystem-card">
+                    <div class="card-icon">
+                        <div class="icon-circle project-icon"></div>
+                    </div>
+                    <h3>Для проектов</h3>
+                    <p>Найдите идеальные голоса для ваших историй, управляйте процессом озвучки, создавайте качественный контент</p>
+                    <ul class="card-features">
+                        <li>Поиск и кастинг голосов</li>
+                        <li>Организация производства</li>
+                        <li>Продвижение готовых работ</li>
+                    </ul>
+                </div>
+                
+                <div class="ecosystem-card">
+                    <div class="card-icon">
+                        <div class="icon-circle studio-icon"></div>
+                    </div>
+                    <h3>Для студий</h3>
+                    <p>Присоединяйтесь к альянсу, делитесь ресурсами, участвуйте в совместных проектах, устанавливайте стандарты</p>
+                    <ul class="card-features">
+                        <li>Сетевое сотрудничество</li>
+                        <li>Общий пул ресурсов</li>
+                        <li>Совместные стандарты качества</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="ecosystem-cta">
+                <p>Мы находимся на этапе формирования экосистемы. Каждый участник сейчас помогает создавать будущее индустрии.</p>
+                <a href="https://t.me/commonairwave" class="btn btn-large" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                    <span>Присоединиться через Telegram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section class="section process bg-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title light">Как работает платформа</h2>
+                <p class="section-subtitle light">Простой путь от идеи до реализации</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Присоединение</h3>
+                        <p>Заходите в наш Telegram-бот, заполняете анкету, указываете свои навыки и предпочтения</p>
+                    </div>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Верификация</h3>
+                        <p>Наша команда проверяет вашу анкету и активирует доступ к платформе</p>
+                    </div>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Поиск проектов</h3>
+                        <p>Изучаете каталог доступных проектов, выбираете подходящие по жанру и сложности</p>
+                    </div>
+                    <div class="step-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Участие</h3>
+                        <p>Подаёте заявку на участие, проходите кастинг, работаете над проектом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="section benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Почему Common Airwave</h2>
+                <p class="section-subtitle">Что отличает нашу экосистему от других</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Сетевая модель</h3>
+                    <p>Объединение студий в альянс с общими стандартами и ресурсами</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Финансовая прозрачность</h3>
+                    <p>Чёткие условия оплаты для чтецов и справедливое распределение бюджетов</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Развитие карьеры</h3>
+                    <p>Возможность роста от начинающего чтеца до профессионального актёра озвучки</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Сообщество</h3>
+                    <p>Поддержка, обратная связь, общение с единомышленниками и профессионалами</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Начните создавать голосовые истории</h2>
+                <p class="cta-subtitle">Присоединяйтесь к формированию экосистемы с самого начала</p>
+                
+                <div class="cta-actions">
+                    <a href="https://t.me/commonairwave" class="btn btn-large btn-telegram" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>Присоединиться в Telegram</span>
+                    </a>
+                    <a href="projects.html" class="btn btn-large btn-outline">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Посмотреть проекты</span>
+                    </a>
+                </div>
+                
+                <div class="cta-info">
+                    <p><i class="fas fa-info-circle"></i> Все коммуникации происходят через Telegram. Сайт служит информационным порталом.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <div class="logo-icon">
+                            <div class="mic-icon"></div>
+                        </div>
+                        <span class="logo-text">Common Airwave</span>
+                    </a>
+                    <p class="footer-desc">Экосистема для создания озвученного контента. Объединяем таланты, проекты и студии.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/commonairwave" class="social-link" target="_blank">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="https://vk.com" class="social-link" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://youtube.com" class="social-link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Навигация</h4>
+                    <a href="index.html" class="footer-link">Главная</a>
+                    <a href="projects.html" class="footer-link">Проекты</a>
+                    <a href="partners.html" class="footer-link">Партнёры</a>
+                    <a href="#contact" class="footer-link">Контакты</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Участие</h4>
+                    <a href="#ecosystem" class="footer-link">Для чтецов</a>
+                    <a href="#ecosystem" class="footer-link">Для проектов</a>
+                    <a href="#ecosystem" class="footer-link">Для студий</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Контакты</h4>
+                    <p class="footer-contact">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>@commonairwave</span>
+                    </p>
+                    <p class="footer-note">Проект находится на этапе формирования. Присоединяйтесь к созданию экосистемы.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Common Airwave. Голосовая экосистема нового поколения.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
